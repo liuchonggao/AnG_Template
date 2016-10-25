@@ -1,0 +1,15 @@
+@import 'common';
+
+// project style
+// ---- 336 * 280  ----
+.ag-tpl-336-280{
+	width: 336px;
+	height: 280px;
+	@include border(all, black);
+	.ag-logo{
+		width: 110px;
+		height: 50px;
+
+	}
+
+}

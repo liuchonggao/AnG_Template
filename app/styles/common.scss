@@ -1,0 +1,86 @@
+@import 'reset';
+
+// === variables ===================================================
+$font-family-default: 'Microsoft Yahei', Helvetica, sans-serif;
+
+$font-size-default: 14px;
+$font-size-small: 12px;
+$font-size-large: 18px;
+
+// line-height
+$line-height-default: 20 / 14;
+
+// === mixins ======================================================
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+			border-radius: $radius;
+}
+
+@mixin transition($type, $ease, $time) {
+	-webkit-transition: $type $ease $time;
+	   -moz-transition: $type $ease $time;
+		 -o-transition: $type $ease $time;
+			transition: $type $ease $time;
+}
+@mixin vertical-txt($direction){
+	width: 1.5em;
+	line-height: 1em;
+	float: $direction;
+}
+
+@mixin border($type, $color){
+	@if $type == left{
+		border-left: 1px solid $color;
+	}
+	@else if $type == right{
+		border-right: 1px solid $color;
+	}
+	@else if $type == top{
+		border-top: 1px solid $color;
+	}
+	@else if $type == bottom{
+		border-bottom: 1px solid $color;
+	}
+	@else{
+		border: 1px solid $color;
+	}
+}
+
+// public style
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.txc{
+	text-align: center;
+}
+.txr{
+	text-align: right;
+}
+.txl{
+	text-align: left;
+}
+.pos-r{
+	position: relative;
+}
+.fix:after {
+	content: '';
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+body{
+	font-family: $font-family-default;
+	font-size: $font-size-default;
+	color: #fff;
+	line-height: $line-height-default;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
