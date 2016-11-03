@@ -5,11 +5,38 @@
 .ag-tpl-336-280{
 	width: 336px;
 	height: 280px;
+	@extend .pos-r;
 	@include border(all, black);
 	.ag-logo{
 		width: 110px;
 		height: 50px;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		position: absolute;
+		top: 0;
+		left: 0;
 
 	}
-
+	.ag-container{
+		width: 262px;
+		margin: 0 auto;
+	}
+	& > .product-desc-right{
+		@extend .txc;
+		@include vertical-txt(right);
+		background-color: #000;
+		color: #fff;
+		height: 180px;
+		padding-top: 10px;
+		font-size: $font-size-large;
+		overflow: hidden;
+		& > span{
+			color: #CD665F;
+			& > span{
+				display: inline-block;
+				width: 1em;
+			}
+		}
+	}
 }
