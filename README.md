@@ -10,29 +10,29 @@
 
 ## 目录结构
 
-├── gulpfile.js                  // gulp 打包文件
-├── package.json                 // npm 包依赖文件
-├── bower.json                   // bower 包依赖文件
-├──app                           // 主要开发目录
-│   ├── styles                   // css 样式文件目录
-│   │   └── base.css
-│   ├── scripts                  // js 脚本文件目录
-│   │   └── base.js
-│   ├── images                   // 静态图片存放目录
-│   │   └── base.png
-│   ├── fonts                    // 字体文件存放目录
-│   │   └── base.eot
-│   └── index.html               // html 页面文件
-├── dist                         // 打包压缩好的发布文件 (执行 gulp build 才会生成)
-│    ├──styles                   // 压缩后的 css 文件
-│    ├──script                   // 压缩后的 js 文件
-│    ├──images                   // 压缩处理后的图片
-│    ├──fonts                    // 字体文件
-│    └──index.html               // 压缩后的 html 文件
-├──sync.py                       // 上传搜狐云 CDN 文件的 python 脚本文件
-├──node_modules                  // npm 包依赖安装后的目录 (执行 npm install 才会生成)
-├──bower_components              // bower 包依赖安装后的目录 (执行 bower install 才会生成)
-└──test                          // 前端自动化测试目录 mocha
+├── gulpfile.js                  // gulp 打包文件 <br>
+├── package.json                 // npm 包依赖文件 <br>
+├── bower.json                   // bower 包依赖文件 <br>
+├──app                           // 主要开发目录 <br>
+│   ├── styles                   // css 样式文件目录 <br>
+│   │   └── base.css <br>
+│   ├── scripts                  // js 脚本文件目录 <br>
+│   │   └── base.js <br>
+│   ├── images                   // 静态图片存放目录 <br>
+│   │   └── base.png <br>
+│   ├── fonts                    // 字体文件存放目录 <br>
+│   │   └── base.eot <br>
+│   └── index.html               // html 页面文件 <br>
+├── dist                         // 打包压缩好的发布文件 (执行 gulp build 才会生成) <br>
+│    ├──styles                   // 压缩后的 css 文件 <br>
+│    ├──script                   // 压缩后的 js 文件 <br>
+│    ├──images                   // 压缩处理后的图片 <br>
+│    ├──fonts                    // 字体文件 <br>
+│    └──index.html               // 压缩后的 html 文件 <br>
+├──sync.py                       // 上传搜狐云 CDN 文件的 python 脚本文件 <br>
+├──node_modules                  // npm 包依赖安装后的目录 (执行 npm install 才会生成) <br>
+├──bower_components              // bower 包依赖安装后的目录 (执行 bower install 才会生成) <br>
+└──test                          // 前端自动化测试目录 mocha <br>
 
 ## 项目运行
 
