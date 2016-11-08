@@ -165,6 +165,11 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
+gulp.task('hello', $.shell.task([
+  'echo hello I will start the cdn commit by python',
+  'python sync.py ./dist/images'
+]))
+
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
