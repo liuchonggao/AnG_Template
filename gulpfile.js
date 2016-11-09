@@ -165,7 +165,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('hello', $.shell.task([
+gulp.task('shell', $.shell.task([
   'echo hello I will start the cdn commit by python',
   'python sync.py ./dist/images'
 ]))
