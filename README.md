@@ -36,6 +36,27 @@
 
 ## 项目运行
 
+1. 初始化
+
+```
+    npm install
+```
+
+2. web 包初始化
+
+```
+    bower install
+```
+
+3. 自动化打包
+
+```
+    gulp build
+```
+
+> python 依赖于 python 3.5.* 版本，需要安装 [scs-vulpo-python3](http://38b0db0bc4be2.cdn.sohucs.com/scs-vulpo-python3.zip) 包才可以上传搜狐云
+
+
 ## 项目说明
 
 ## P.S.
